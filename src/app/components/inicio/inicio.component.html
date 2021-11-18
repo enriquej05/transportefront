@@ -1,3 +1,165 @@
-<agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-  </agm-map>
+
+
+<div class="min-w-screen min-h-screen bg-gray-900 flex justify-center px-3 py-3">
+  <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" >
+      <div class="w-full">
+          <div class="w-full py-5 px-5 md:px-10">
+            <nav id="header" class="w-full z-30 top-0 py-1">
+              <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-1">   
+                  <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                      <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                          <title>menu</title>
+                          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                      </svg>
+                  </label>
+                  <input class="hidden" type="checkbox" id="menu-toggle" />
+        
+                  <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+                      <nav>
+                          <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                              <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Registrate</a></li>
+                              <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Inicia Sesión</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </nav>
+          </div>
+          <div class="carousel relative container mx-auto" style="max-width:1600px;">
+            <div class="carousel-inner relative overflow-hidden w-full">
+                <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://i.ibb.co/7jyFZR8/jetty-g3249bece3-1920.jpg');">
+      
+                        <div class="container mx-auto">
+                            <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                                <p class="text-black text-2xl my-4">Stripy Zig Zag Jigsaw Pillow and Duvet Set</p>
+                            </div>
+                        </div>
+      
+                    </div>
+                </div>
+                <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+      
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
+                    <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://i.ibb.co/CPTm8LK/cancun-gb7fd1ec70-640.jpg');">
+      
+                        <div class="container mx-auto">
+                            <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                                <p class="text-black text-2xl my-4">Real Bamboo Wall Clock</p>
+                            </div>
+                        </div>
+      
+                    </div>
+                </div>
+                <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+      
+                <!--Slide 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom" style="background-image: url('https://i.ibb.co/g7y1jT9/holiday-gc66697d1a-1280.jpg');">
+      
+                        <div class="container mx-auto">
+                            <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                                <p class="text-black text-2xl my-4">Brown and blue hardbound book</p>
+                            </div>
+                        </div>
+      
+                    </div>
+                </div>
+                <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+      
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                    </li>
+                </ol>
+      
+            </div>
+        </div>
+
+        <div class="text-center mb-5">
+          <h6 class="text-2xl font-semibold mt-6">Te encuentras en: Cancún</h6>
+          <p class="mt-2 mb-4 mr-2 ml-2 text-blueGray-500">
+            Write a few lines about each one. A paragraph describing a
+            feature will be enough. Keep you user engaged!
+          </p>
+          <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full">
+            Registrate
+          </button>
+        </div>        
+
+        <agm-map [zoom]="11.5" [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+        
+
+        <section class="pb-10 bg-blueGray-200 -mt-24">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+              <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div class="px-4 py-5 flex-auto">
+                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full">
+                      <img src="https://img.icons8.com/fluency/50/000000/maps.png"/>
+                    </div>
+                    <h6 class="text-xl font-semibold">Awarded Agency</h6>
+                    <p class="mt-2 mb-4 text-blueGray-500">
+                      Divide details about your product or agency work into parts.
+                      A paragraph describing a feature will be enough.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-4/12 px-4 text-center">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div class="px-4 py-5 flex-auto">
+                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full">
+                      <img src="https://img.icons8.com/color/48/000000/bus.png"/>
+                    </div>
+                    <h6 class="text-xl font-semibold">Free Revisions</h6>
+                    <p class="mt-2 mb-4 text-blueGray-500">
+                      Keep you user engaged by providing meaningful information.
+                      Remember that by this time, the user is curious.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div class="px-4 py-5 flex-auto">
+                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full">
+                      <img src="https://img.icons8.com/color/48/000000/speed.png"/>
+                    </div>
+                    <h6 class="text-xl font-semibold">Verified Company</h6>
+                    <p class="mt-2 mb-4 text-blueGray-500">
+                      Write a few lines about each one. A paragraph describing a
+                      feature will be enough. Keep you user engaged!
+                    </p>
+                  </div>
+                </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+

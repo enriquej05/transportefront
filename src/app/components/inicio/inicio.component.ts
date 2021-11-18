@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MapasService } from 'src/app/maps.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,12 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  lat = 51.678418;
-  lng = 7.809007;
-  
-  constructor() { }
+  lat = 	21.15778923034668;
+  lng = -86.87989807128906;
 
-  ngOnInit(): void {
+ lat2:string = '';
+ lng2:string= '';
+ country: string = '';
+ city: string = '';
+ continente: string='';
+ region: string='';
+ codigo_postal: number=0;
+ constructor(private map: MapasService){}
+  
+
+
+  ngOnInit() {
+    this.map.getLocation().subscribe(data => {
+      console.log(data);
+      this.lat2 = data.latitude;
+      this.lng2 = data.longitude;
+      this.country = data.country_name;
+      this.city = data.city;
+      this.region = data.region_name;
+      this.continente = data.continent_name;
+      this.codigo_postal = data.zip;
+    })
   }
 
 }
