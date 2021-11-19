@@ -22,4 +22,7 @@ export class MapasService{
   getLocation(){
     return this.http.get<Location>('http://api.ipapi.com/api/check?access_key=b091a5d7b2c7b7834af9a1a6ce6411a5');
   }
+  
+  
+  
 }

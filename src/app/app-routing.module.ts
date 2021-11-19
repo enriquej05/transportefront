@@ -6,6 +6,7 @@ import{RegisterComponent} from './components/register/register.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthUserGuard } from './guards/authuser.guard';
+import { PrincipalComponent } from './components/principal/principal.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,9 @@ const routes: Routes = [
   },
   {
     path: 'inicio',component: InicioComponent
+  },
+  {
+    path: 'principal',component: PrincipalComponent
   },
   {
     path: '',

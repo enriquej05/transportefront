@@ -14,6 +14,8 @@ import{FormsModule, ReactiveFormsModule,FormBuilder,
   ValidatorFn} from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { LocationService } from './location.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    InicioComponent
+    InicioComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     })
   ],
 
-  providers: [],
+  providers: [LocationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
