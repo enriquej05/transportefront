@@ -20,14 +20,14 @@ const routes: Routes = [
     path: 'home',component: HomeComponent,canActivate: [AuthGuard]
   },
   {
-    path: 'inicio',component: InicioComponent
+    path: 'inicio',component: InicioComponent, 
   },
   {
-    path: 'principal',component: PrincipalComponent
+    path: 'principal',component: PrincipalComponent,canActivate: [AuthGuard]
   },
   {
     path: '',
-    redirectTo: '/register',
+    redirectTo: '/inicio',
     pathMatch: 'full'
   },
 ];

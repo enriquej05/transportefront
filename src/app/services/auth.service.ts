@@ -59,7 +59,9 @@ export class AuthService {
   registro(usuario: User){
     this.http.post<User>('http://localhost:8000/api/register',usuario).subscribe(data=>{
       setTimeout(()=>{
-        this.router.navigateByUrl('/home');
+        this.router.navigate(['/principal']).then(()=>{
+          window.location.reload();
+        });
         
         localStorage.setItem('currentToken', JSON.stringify({ token: data['token']}));
         this.isAuthenticated.next(true);
@@ -71,17 +73,20 @@ export class AuthService {
   login(usuario: User){
     this.http.post<User>('http://localhost:8000/api/login',usuario).subscribe(data=>{
       setTimeout(()=>{
-        this.router.navigateByUrl('/home');
+        this.router.navigate(['/principal']).then(()=>{
+          window.location.reload();
+        });
         localStorage.setItem('currentToken', JSON.stringify({ token: data['token']}));
         this.isAuthenticated.next(true);
+       
         
       },1000);
     })
-    
   }
   logout(){
     localStorage.clear();
     this.isAuthenticated.next(false);
+    window.location.reload();
 
   }
 }

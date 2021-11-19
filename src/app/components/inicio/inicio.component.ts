@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MapasService } from 'src/app/maps.service';
+import { MapsService } from 'src/app/services/maps.service';
 
 @Component({
   selector: 'app-inicio',
@@ -18,7 +18,7 @@ export class InicioComponent implements OnInit {
  continente: string='';
  region: string='';
  codigo_postal: number=0;
- constructor(private map: MapasService){}
+ constructor(private map: MapsService){}
   
 
 

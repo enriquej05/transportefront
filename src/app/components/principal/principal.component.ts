@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MapasService } from 'src/app/maps.service';
-import { LocationService } from 'src/app/location.service';
+import { LocationService } from 'src/app/services/location.service';
+
 
 @Component({
   selector: 'app-principal',

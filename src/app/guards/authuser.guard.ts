@@ -19,8 +19,8 @@ export class AuthUserGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       if(this.estado){
-        this.router.navigateByUrl('/home')    
-           
+        this.router.navigateByUrl('/principal')    
+        // window.location.reload();
       return true;
       }else{
         return false;

@@ -15,7 +15,8 @@ import{FormsModule, ReactiveFormsModule,FormBuilder,
 import { HomeComponent } from './components/home/home.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { PrincipalComponent } from './components/principal/principal.component';
-import { LocationService } from './location.service';
+import { LocationService } from './services/location.service';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LocationService } from './location.service';
     RegisterComponent,
     HomeComponent,
     InicioComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
